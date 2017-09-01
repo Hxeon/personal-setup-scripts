@@ -4,6 +4,11 @@
 #
 # I designed this script so I have time to prepare my tea while my computer does my installs for me! 
 
+# Check if I'm root, or if there'll be errors on my screen when I come back (
+#
+if [ $(id -u) != "0" ]; then
+    echo "Uh oh! Someone forgot a \"sudo\"!"
+else
 # Check for updates.
 #
 apt update
@@ -43,3 +48,4 @@ sleep 20
 #
 apt install telegram-desktop
 sleep 20
+fi
