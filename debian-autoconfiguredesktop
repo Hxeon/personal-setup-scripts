@@ -1,0 +1,45 @@
+#!/bin/bash
+#
+# I run this script as root, as I make it and I trust it since I had control over what i put inside.
+#
+# I designed this script so I have time to prepare my tea while my computer does my installs for me! 
+
+# Check for updates.
+#
+apt update
+sleep 20
+
+# Upgrade all the old packages that came with the disk.
+#
+apt upgrade
+sleep 20
+
+# Install my favorite terminal.
+#
+apt install yakuake
+sleep 20
+
+# Install VirtualBox and the Guest Additions.
+#
+apt install virtualbox virtualbox-guest-additions-iso
+sleep 20
+
+# Install GParted.
+#
+apt install gparted
+sleep 20
+
+# Install Redshift.
+#
+apt install redshift redshift-gtk
+sleep 20
+
+# Install KeepassX.
+#
+apt install keepassx 
+sleep 20
+
+# Install Telegram.
+#
+apt install telegram-desktop
+sleep 20
