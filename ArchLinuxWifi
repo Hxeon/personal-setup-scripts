@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "CAUTION: I've only tested this on my Dell Latitude e6320. It may not work on your system and might cause issues. I am not responsible for those. This file only exists so I can grab it whenever I want. Thank you for your undertstanding."
+
+sleep 30
+
+pacman -S broadcom-wl-dkms
+echo ""
+echo "Will reboot now. Please close anything important. You have one minute to close everything. You got this!"
+sleep 60
+reboot
